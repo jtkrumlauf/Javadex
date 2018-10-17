@@ -1,12 +1,6 @@
 # Javadex
 
-A simple Pokedex made in Java. Extremely lightweight and easy to use, Javadex displays the basic information about a Pokemon including the following:
-
-⋅⋅⋅Pokedex Number
-⋅⋅⋅Type(s)
-⋅⋅⋅It's type advantages
-⋅⋅⋅It's type disadvantages
-⋅⋅⋅The Pokemon's sprite in the current version of the game
+A simple Pokedex made in Java. Extremely lightweight and easy to use, Javadex displays the basic information about a Pokemon including the following: Pokedex number, type(s), it's type advantages, it's type disadvantages, and the Pokemon's sprite in the current version of the game
 
 ## Usage
 1. `git clone https://github.com/jtkrumlauf/Javadex`
