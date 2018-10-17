@@ -8,4 +8,5 @@ A simple Pokedex made in Java. Extremely lightweight and easy to use, Javadex di
 3. Run the .jar file
 
 *Note*: Be sure to keep the .jar file and the .csv file in the same working directory
+
 *Javadex v1.0 only contains Pokemon up to versions X and Y*
