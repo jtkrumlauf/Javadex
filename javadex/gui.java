@@ -80,10 +80,10 @@ public class gui {
 		pokeType.setBounds(10, 127, 137, 21);
 		
 		Label strongAgainst = new Label(shell, SWT.NONE);
-		strongAgainst.setBounds(10, 181, 414, 15);
+		strongAgainst.setBounds(10, 181, 414, 21);
 		
 		Label weakAgainst = new Label(shell, SWT.NONE);
-		weakAgainst.setBounds(10, 154, 414, 15);
+		weakAgainst.setBounds(10, 154, 414, 21);
 		
 		Browser browser = new Browser(shell, SWT.NONE);
 		browser.setForeground(SWTResourceManager.getColor(SWT.COLOR_TITLE_INACTIVE_FOREGROUND));
