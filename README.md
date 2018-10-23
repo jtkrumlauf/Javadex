@@ -18,6 +18,9 @@ Photos can be found on my website: [https://justinkrumlauf.me/projects/javadex](
 
 | Generation        | Game(s)           | System  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Gen I | Red, Blue, Yellow | Gameboy Color (GBC) |
+| Gen II | Gold, Silver, Crystal | Gameboy Color (GBC) |
+| Gen III | Ruby, Sapphire, Emerald, FireRed, LeafGreen | Gameboy Advanced (GBA) |
+| Gen IV | Diamond, Pearl, Platinum, HeartGold, SoulSilver | Nintendo DS (NDS) |
+| Gen V | Black, White, Black II, White II | Nintendo DS (NDS) |
+| Gen VI | X, Y, Omega Ruby, Alpha Sapphire | Nintendo 3DS (N3DS) |
