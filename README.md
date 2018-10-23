@@ -14,6 +14,8 @@ Photos can be found on my website: [https://justinkrumlauf.me/projects/javadex](
 
 ## About/Other
 *Contains Pokemon from the Follwing Generations:*
+
+
 | Generation        | Game(s)           | System  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
