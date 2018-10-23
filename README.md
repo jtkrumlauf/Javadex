@@ -13,7 +13,10 @@ A simple Pokedex made in Java. Extremely lightweight and easy to use, Javadex di
 Photos can be found on my website: [https://justinkrumlauf.me/projects/javadex](https://justinkrumlauf.me/projects/javadex.html)
 
 ## About/Other
-- Contains Pokemon from the Follwing Generations:
--- Generation 1
-
-
+*Contains Pokemon from the Follwing Generations:*
+- Generation 1
+- Generation 2
+- Generation 3
+- Generation 4
+- Generation 5
+- Generation 6
