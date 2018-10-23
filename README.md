@@ -14,9 +14,8 @@ Photos can be found on my website: [https://justinkrumlauf.me/projects/javadex](
 
 ## About/Other
 *Contains Pokemon from the Follwing Generations:*
-- Generation 1
-- Generation 2
-- Generation 3
-- Generation 4
-- Generation 5
-- Generation 6
+| Generation        | Game(s)           | System  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
