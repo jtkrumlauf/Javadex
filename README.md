@@ -12,4 +12,6 @@ A simple Pokedex made in Java. Extremely lightweight and easy to use, Javadex di
 ## Photos
 Photos can be found on my website: [https://justinkrumlauf.me/projects/javadex](https://justinkrumlauf.me/projects/javadex.html)
 
+## About/Other
+
 *Javadex v1.0 only contains Pokemon up to versions X and Y*
