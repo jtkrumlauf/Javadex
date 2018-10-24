@@ -91,7 +91,11 @@ public class gui {
 		browser.setUrl("");
 		browser.setBounds(429, 10, 111, 111);
 		
-		//ADD WEAKNESSES AND STRONG AGAINST AREAS
+		Label spriteBackground = new Label(shell, SWT.NONE);
+		spriteBackground.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
+		spriteBackground.setBackground(SWTResourceManager.getColor(SWT.COLOR_RED));
+		spriteBackground.setBounds(420, 0, 130, 132);
+		
 		//ADD BACKGROUND COLOR CHANGE DEPENDING ON TYPE
 		Button submitButton = new Button(shell, SWT.NONE);
 		submitButton.addSelectionListener(new SelectionAdapter() {
@@ -99,7 +103,7 @@ public class gui {
 			public void widgetSelected(SelectionEvent e) {
 				String pokeName = inputName.getText();
 				try {
-					String path = "pokemon_list.csv";
+					String path = "pokemon_list.csv"; //REMEMBER TO CHANGE BEFORE EXPORTING TO JUST pokemon_list.csv
 					BufferedReader reader = new BufferedReader(new FileReader(path));
 					String line = "";
 										
@@ -122,7 +126,7 @@ public class gui {
 								pokeType.setText("Type(s): " + values[2]);
 							}
 
-							browser.setUrl("http://www.pokestadium.com/sprites/xy/"+ pokeName +".gif");
+							browser.setUrl("www.pokestadium.com/sprites/xy/"+ pokeName.toLowerCase() +".gif");
 							
 							if(values[2].toLowerCase().equals("normal")) {
 								strongAgainst.setText("Super-Effective Against: " + "None");
