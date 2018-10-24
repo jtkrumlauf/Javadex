@@ -56,9 +56,9 @@ public class gui {
 	 * Create contents of the window.
 	 */
 	protected void createContents() {
-		shell = new Shell();
-		shell.setSize(566, 394);
-		shell.setText("Javadex v1.0");
+		shell = new Shell(SWT.CLOSE | SWT.TITLE | SWT.BORDER | SWT.APPLICATION_MODAL | SWT.MIN );
+		shell.setSize(561, 336);
+		shell.setText("Javadex v1.1.0");
 		
 		Label lblPokemon = new Label(shell, SWT.NONE);
 		lblPokemon.setBounds(10, 10, 55, 21);
@@ -86,8 +86,6 @@ public class gui {
 		weakAgainst.setBounds(10, 154, 414, 21);
 		
 		Browser browser = new Browser(shell, SWT.NONE);
-		browser.setForeground(SWTResourceManager.getColor(SWT.COLOR_TITLE_INACTIVE_FOREGROUND));
-		browser.setBackground(SWTResourceManager.getColor(SWT.COLOR_BLACK));
 		browser.setUrl("");
 		browser.setBounds(429, 10, 111, 111);
 		
@@ -95,6 +93,16 @@ public class gui {
 		spriteBackground.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
 		spriteBackground.setBackground(SWTResourceManager.getColor(SWT.COLOR_RED));
 		spriteBackground.setBounds(420, 0, 130, 132);
+		
+		Browser partySprite = new Browser(shell, SWT.NONE);
+		partySprite.setBackground(SWTResourceManager.getColor(SWT.COLOR_BLACK));
+		partySprite.setBounds(18, 234, 55, 55);
+		
+		Label generationOrigin = new Label(shell, SWT.NONE);
+		generationOrigin.setBounds(91, 249, 179, 21);
+		
+		Label gamesFound = new Label(shell, SWT.NONE);
+		gamesFound.setBounds(91, 276, 311, 21);
 		
 		//ADD BACKGROUND COLOR CHANGE DEPENDING ON TYPE
 		Button submitButton = new Button(shell, SWT.NONE);
@@ -118,6 +126,7 @@ public class gui {
 							pokeResultsField.setText("Results for: "+pokeName);
 							seperation.setText("..................................................");
 							System.out.println(line);
+							System.out.println(values[0]);
 							pokeNum.setText("Dex No.: " + values[0]);
 							try {
 								pokeType.setText("Type(s): " + values[2] + " " + values[3]);
@@ -127,6 +136,7 @@ public class gui {
 							}
 
 							browser.setUrl("www.pokestadium.com/sprites/xy/"+ pokeName.toLowerCase() +".gif");
+							partySprite.setUrl("www.pokestadium.com/assets/img/sprites/misc/icons/"+ pokeName.toLowerCase() +".png");
 							
 							if(values[2].toLowerCase().equals("normal")) {
 								strongAgainst.setText("Super-Effective Against: " + "None");
@@ -200,9 +210,38 @@ public class gui {
 								strongAgainst.setText("Super-Effective Against: " + "Fighting" + " " + "Dark" + " " + "Dragon");
 								weakAgainst.setText("Not Very Effective Against: " + "Fire" + " " + "Steel" + " " + "Poison");
 							}
-						}
+							
+							String[] dexNum = values[0].split("#");
+							Integer int_dexNum = Integer.parseInt(dexNum[1]);
+							System.out.println(int_dexNum);
+							if(int_dexNum <= 151) {
+								generationOrigin.setText("Generation: " + "I");
+								gamesFound.setText("First Seen in Pokemon: " + "Red, Blue, Yellow");
+							}
+							else if(int_dexNum > 151 && int_dexNum <= 251) {
+								generationOrigin.setText("Generation: " + "II");
+								gamesFound.setText("First Seen in Pokemon: " + "Gold, Silver, Crystal");
+							}
+							else if(int_dexNum > 251 && int_dexNum <= 386) {
+								generationOrigin.setText("Generation: " + "III");
+								gamesFound.setText("First Seen in Pokemon: " + "Ruby, Sapphire, Emerald, FireRed, LeafGreen");
+							}
+							else if(int_dexNum > 386 && int_dexNum <= 493) {
+								generationOrigin.setText("Generation: " + "IV");
+								gamesFound.setText("First Seen in Pokemon: " + "Diamond, Pearl, Platinum, HeartGold, SoulSliver");
+							}
+							else if(int_dexNum > 493 && int_dexNum > 649) {
+								generationOrigin.setText("Generation: " + "V");
+								gamesFound.setText("First Seen in Pokemon: " + "Black, White, Black 2, White 2");
+							}
+							else if(int_dexNum > 649 && int_dexNum > 712) {
+								generationOrigin.setText("Generation: " + "VI");
+								gamesFound.setText("First Seen in Pokemon: " + "X, Y, Omega Ruby, Alpha Sapphire");
+							}
+						}		
+						
 					
-						}
+					}
 					
 					}
 					reader.close();
@@ -215,6 +254,5 @@ public class gui {
 		});
 		submitButton.setBounds(10, 37, 75, 25);
 		submitButton.setText("Search");
-		
 	}
 }
