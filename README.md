@@ -9,9 +9,6 @@ A simple Pokedex made in Java. Extremely lightweight and easy to use, Javadex di
 
 *Note*: Be sure to keep the .jar file and the .csv file in the same working directory
 
-## Photos
-Photos can be found on my website: [https://justinkrumlauf.me/projects/javadex](https://justinkrumlauf.me/projects/javadex.html)
-
 ## About/Other
 *Contains Pokemon from the Follwing Generations:*
 
@@ -24,3 +21,6 @@ Photos can be found on my website: [https://justinkrumlauf.me/projects/javadex](
 | Gen IV | Diamond, Pearl, Platinum, HeartGold, SoulSilver | Nintendo DS (NDS) |
 | Gen V | Black, White, Black II, White II | Nintendo DS (NDS) |
 | Gen VI | X, Y, Omega Ruby, Alpha Sapphire | Nintendo 3DS (N3DS) |
+
+## Photos
+Photos can be found on my website: [https://justinkrumlauf.me/projects/javadex](https://justinkrumlauf.me/projects/javadex.html)
