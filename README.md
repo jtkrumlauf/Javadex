@@ -25,4 +25,4 @@ A simple Pokedex made in Java. Extremely lightweight and easy to use, Javadex di
 ## Photos
 Photos can be found on my website: [https://justinkrumlauf.me/projects/javadex](https://justinkrumlauf.me/projects/javadex.html)
 
-*Note*: All photos and sprites used in Javadex are property of the creators. I do not own any.
+*Note*: All photos and sprites used in Javadex are property of the creators.
